@@ -1,5 +1,154 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
 }
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.upperleft {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #1a1a1a;
+  line-height: 1.5rem;
+}
+
+.upperheader {
+  margin: 0 0 20px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .upperheader {
+    margin: 0 0 30px 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .upperheader {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+header > div > div {
+  display: flex;
+  align-items: center;
+}
+
+.upperright > div {
+  padding: 10px;
+}
+
+div.lowerheader {
+  display: flex;
+  justify-content: center;
+  background-color: palegreen;
+  font-weight: bold;
+  border-top: 2px solid rgba(0,0,0,0.34) ;
+  border-bottom: 2px solid rgba(0,0,0,0.34) ;
+}
+
+#blog {
+  font-size: 72px;
+}
+
+@media screen and (min-width: 768px) {
+  #blog {
+    font-size: 10.05rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #blog {
+    font-size: 15rem;
+  }
+}
+
+.upperheader {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .upperheader {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .upperheader {
+    padding: 10px 0;
+    max-width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    background-color: orange;
+    margin: 0 auto;
+  }
+}
+
+.tabletanddesktop {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .tabletanddesktop {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .tabletanddesktop {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+}
+
+.mobile {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.mobile > img {
+    width: 32px;
+    height: 32px;
+}
+
