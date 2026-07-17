@@ -45,7 +45,7 @@ body {
 
 @media screen and (min-width: 768px) {
   body {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
   }
 }
 
@@ -61,10 +61,10 @@ header > div > div {
 div.lowerheader {
   display: flex;
   justify-content: center;
-  background-color: palegreen;
+  /* background-color: palegreen; */
   font-weight: bold;
-  border-top: 2px solid rgba(0,0,0,0.34) ;
-  border-bottom: 2px solid rgba(0,0,0,0.34) ;
+  border-top: 2px solid rgba(0, 0, 0, 0.34);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.34);
 }
 
 #blog {
@@ -106,30 +106,65 @@ div.lowerheader {
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1280px;
-    background-color: orange;
+    /* background-color: orange; */
     margin: 0 auto;
   }
 }
 
-.tabletanddesktop {
+.tablet {
+  display: none;
+}
+
+.desktop {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .tabletanddesktop {
+  .tablet {
     display: flex;
     align-items: center;
     column-gap: 10px;
+  }
+  .desktop {
+    display: none;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .tabletanddesktop {
+  .desktop {
     display: flex;
     align-items: center;
     column-gap: 10px;
   }
+  .tablet {
+    display: none;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .tablet > div {
+    font-size: 1.125rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+    .desktop > div {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tablet > div > img {
+    max-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+    .desktop > div > img {
+    max-height: 24px;
+  }
+}
+
 
 .mobile {
   display: block;
@@ -148,7 +183,182 @@ div.lowerheader {
 }
 
 .mobile > img {
-    width: 32px;
-    height: 32px;
+  width: 32px;
+  height: 32px;
 }
 
+.mainupper {
+  /* background-color: bisque; */
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+.post-tag {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 8px;
+  margin: 24px 0 0 0;
+}
+
+.post-title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 12px 0 12px 0;
+}
+
+.post1 > div > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 228px;
+}
+
+.post4 > div > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 228px;
+}
+
+.post-date {
+  font-size: 0.875rem;
+  color: #6941c6;
+  line-height: 1.5rem;
+}
+
+.post1 {
+  grid-area: post1;
+}
+
+.post2 {
+  grid-area: post2;
+}
+
+.post3 {
+  grid-area: post3;
+}
+
+.post4 {
+  grid-area: post4;
+}
+
+.post5 {
+  grid-area: post5;
+}
+
+.post6 {
+  grid-area: post6;
+}
+
+.post7 {
+  grid-area: post7;
+}
+
+.post8 {
+  grid-area: post8;
+}
+
+.post9 {
+  grid-area: post9;
+}
+
+.post10 {
+  grid-area: post10;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainupper-content {
+    display: grid;
+    gap: 30px;
+    grid-template-areas:
+      "post1 post2"
+      "post1 post3";
+  }
+}
+
+.mainmiddle {
+  /* background-color: rgb(235, 174, 99); */
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1440px) {
+  .mainmiddle-content {
+    display: grid;
+    grid-template-areas: "post4";
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .post2 {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post2 {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .post3 {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post3 {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .post4 {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+  }
+}
+
+.post-word {
+  flex-direction: row;
+}
+
+.post-content {
+  color: #667085;
+  font-size: 16px;
+}
+
+.mainupper {
+  margin: 20px 0 0 0;
+}
+
+.post1 {
+  margin: 32px 0 32px 0;
+}
+
+.post2 {
+  margin: 32px 0 0 0;
+}
+.post3 {
+  margin: 32px 0 0 0;
+}
+
+.post4 {
+  margin: 32px 0 0 0;
+}
+
+.mainupper-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 30px 0 0 0;
+}
